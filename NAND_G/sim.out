@@ -1,0 +1,61 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2009.vpi";
+S_0x62c0fa3a4830 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x62c0fa3a49c0 .scope module, "NAND_G_tb" "NAND_G_tb" 3 1;
+ .timescale 0 0;
+v0x62c0fa3b75f0_0 .var "a", 0 0;
+v0x62c0fa3b76c0_0 .var "b", 0 0;
+v0x62c0fa3b7790_0 .net "y", 0 0, L_0x62c0fa3b7890;  1 drivers
+S_0x62c0fa36b490 .scope module, "UUT" "NAND_G" 3 5, 4 1 0, S_0x62c0fa3a49c0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x62c0fa3b7890 .functor NAND 1, v0x62c0fa3b75f0_0, v0x62c0fa3b76c0_0, C4<1>, C4<1>;
+v0x62c0fa36b6c0_0 .net "a", 0 0, v0x62c0fa3b75f0_0;  1 drivers
+v0x62c0fa3b7410_0 .net "b", 0 0, v0x62c0fa3b76c0_0;  1 drivers
+v0x62c0fa3b74d0_0 .net "y", 0 0, L_0x62c0fa3b7890;  alias, 1 drivers
+    .scope S_0x62c0fa3a49c0;
+T_0 ;
+    %vpi_call/w 3 9 "$dumpfile", "NAND.vcd" {0 0 0};
+    %vpi_call/w 3 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x62c0fa3a49c0 {0 0 0};
+    %vpi_call/w 3 12 "$monitor", "t=%0t| a=%b, b=%b | y=%b", $time, v0x62c0fa3b75f0_0, v0x62c0fa3b76c0_0, v0x62c0fa3b7790_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x62c0fa3b75f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x62c0fa3b76c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x62c0fa3b75f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x62c0fa3b76c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x62c0fa3b75f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x62c0fa3b76c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x62c0fa3b75f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x62c0fa3b76c0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call/w 3 19 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "NAND_G_tb.v";
+    "NAND_G.V";
