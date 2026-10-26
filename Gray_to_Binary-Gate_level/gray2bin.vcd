@@ -1,0 +1,156 @@
+$date
+	Mon Oct 26 09:40:46 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module G_to_B_tb $end
+$var wire 4 ! b [3:0] $end
+$var reg 4 " g [3:0] $end
+$var integer 32 # i [31:0] $end
+$scope module UUT $end
+$var wire 1 $ b0 $end
+$var wire 1 % b1 $end
+$var wire 1 & b2 $end
+$var wire 1 ' b3 $end
+$var wire 1 ( g0 $end
+$var wire 1 ) g1 $end
+$var wire 1 * g2 $end
+$var wire 1 + g3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1 !
+1$
+1(
+b1 "
+b1 #
+#20
+1%
+b11 !
+1$
+1)
+0(
+b10 "
+b10 #
+#30
+b10 !
+0$
+1(
+b11 "
+b11 #
+#40
+1&
+1%
+b111 !
+1$
+1*
+0)
+0(
+b100 "
+b100 #
+#50
+b110 !
+0$
+1(
+b101 "
+b101 #
+#60
+0%
+b100 !
+0$
+1)
+0(
+b110 "
+b110 #
+#70
+b101 !
+1$
+1(
+b111 "
+b111 #
+#80
+1'
+1&
+1%
+b1111 !
+1$
+1+
+0*
+0)
+0(
+b1000 "
+b1000 #
+#90
+b1110 !
+0$
+1(
+b1001 "
+b1001 #
+#100
+0%
+b1100 !
+0$
+1)
+0(
+b1010 "
+b1010 #
+#110
+b1101 !
+1$
+1(
+b1011 "
+b1011 #
+#120
+0&
+0%
+b1000 !
+0$
+1*
+0)
+0(
+b1100 "
+b1100 #
+#130
+b1001 !
+1$
+1(
+b1101 "
+b1101 #
+#140
+1%
+b1011 !
+1$
+1)
+0(
+b1110 "
+b1110 #
+#150
+b1010 !
+0$
+1(
+b1111 "
+b1111 #
+#160
+b10000 #
