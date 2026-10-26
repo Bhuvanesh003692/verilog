@@ -1,0 +1,60 @@
+$date
+	Mon Oct 26 09:01:49 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module decoder2to4_tb $end
+$var wire 1 ! y3 $end
+$var wire 1 " y2 $end
+$var wire 1 # y1 $end
+$var wire 1 $ y0 $end
+$var reg 1 % a0 $end
+$var reg 1 & a1 $end
+$scope module UUT $end
+$var wire 1 % a0 $end
+$var wire 1 ' a0_n $end
+$var wire 1 & a1 $end
+$var wire 1 ( a1_n $end
+$var wire 1 $ y0 $end
+$var wire 1 # y1 $end
+$var wire 1 " y2 $end
+$var wire 1 ! y3 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1(
+1'
+0&
+0%
+1$
+0#
+0"
+0!
+$end
+#10
+0$
+0'
+1#
+1%
+#20
+1"
+1'
+0#
+0(
+0%
+1&
+#30
+0"
+0'
+1!
+1%
+#40
